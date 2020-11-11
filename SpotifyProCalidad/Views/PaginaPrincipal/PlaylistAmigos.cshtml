@@ -1,0 +1,24 @@
+<table class="egt">
+
+  <tr>
+
+    <th>Nombre lista de reproduccion</th>
+
+   
+
+  </tr>
+@foreach (var item in @ViewBag.ListasReproducciones)
+{
+  <tr>
+
+    <td><a  href="/ListaReproduccion/DetalleListaReproduccion?IdLista=@item.Id">@item.Nombre</a></td>
+
+
+  </tr>
+    
+}
+
+
+
+
+</table>
