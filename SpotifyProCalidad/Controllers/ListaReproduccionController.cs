@@ -128,6 +128,13 @@ namespace SpotifyProCalidad.Controllers
             
             return RedirectToAction("Perfil", "PaginaPrincipal");
         }
+        public IActionResult ListaDeReproducciones (int IdUsuario)
+        {
+            
+           ViewBag.listaReproducciones= _listaReproduccion.ListasDeReproducciones(IdUsuario);
+            
+            return View();
+        }
         
         private Usser LoggedUser()
         {

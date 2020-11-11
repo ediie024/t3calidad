@@ -23,6 +23,7 @@ namespace SpotifyProCalidad.Repositorio
         public ListaRepoduccion BuscarLista(int IdLIsta);
 
         public void CrewarFavoritoPorDefecto(Usser usuario);
+        public List<ListaRepoduccion> ListasDeReproducciones(int IdUsuario);
 
 
     }
@@ -99,6 +100,11 @@ namespace SpotifyProCalidad.Repositorio
             favoritos.Estado = false;
             _context.ListaReproducciones.Add(favoritos);
             _context.SaveChanges();
+        }
+
+        public List<ListaRepoduccion> ListasDeReproducciones(int IdUsuario)
+        {
+            return _context.ListaReproducciones.Where(o => o.UsserId == IdUsuario).ToList();
         }
     }
 }

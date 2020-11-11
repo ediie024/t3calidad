@@ -93,9 +93,8 @@ namespace SpotifyProCalidad.Controllers
 
         public IActionResult PlaylistAmigos(int IdAmigo)
         {
-            var playlistAmigo = _listaReproduccion.GetAllListaRepoduccion()
-                .Where(o => o.UsserId == IdAmigo && !o.Estado).ToList();
-            ViewBag.ListasReproducciones = playlistAmigo;
+            
+            ViewBag.ListasReproducciones = _listaReproduccion.ListasDeReproducciones(IdAmigo);
             
             return View();
         }

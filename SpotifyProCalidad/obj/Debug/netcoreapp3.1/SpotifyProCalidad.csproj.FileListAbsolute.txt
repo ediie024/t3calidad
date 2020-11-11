@@ -647,3 +647,4 @@ D:\calidad2020-1\calidad2020-1\SpotifyProCalidad\obj\Debug\netcoreapp3.1\staticw
 D:\calidad2020-1\calidad2020-1\SpotifyProCalidad\obj\Debug\netcoreapp3.1\SpotifyProCalidad.genruntimeconfig.cache
 D:\Upn 2020-2\Calidad\proyectoAVancesNeiser\calidad2020-1\SpotifyProCalidad\obj\Debug\netcoreapp3.1\Razor\Views\PaginaPrincipal\VerComentarios.cshtml.g.cs
 D:\Upn 2020-2\Calidad\proyectoAVancesNeiser\calidad2020-1\SpotifyProCalidad\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Registrarse.cshtml.g.cs
+D:\Upn 2020-2\Calidad\proyectoAVancesNeiser\calidad2020-1\SpotifyProCalidad\obj\Debug\netcoreapp3.1\Razor\Views\ListaReproduccion\ListaDeReproducciones.cshtml.g.cs
