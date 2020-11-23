@@ -15,7 +15,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "D:\\Upn 2020-2\\Calidad\\proyectoAVancesNeiser\\calidad2020-1\\SpotifyProCalidad\\SpotifyProCalidad.csproj": {
+            "projectPath": "D:\\Upn 2020-2\\Calidad\\proyectoAVancesNeiser\\calidad2020-1\\SpotifyProCalidad\\SpotifyProCalidad.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -30,6 +34,10 @@
         "Microsoft.NET.Test.Sdk": {
           "target": "Package",
           "version": "[16.4.0, )"
+        },
+        "Moq": {
+          "target": "Package",
+          "version": "[4.15.1, )"
         },
         "NUnit3TestAdapter": {
           "target": "Package",
@@ -51,6 +59,9 @@
       "assetTargetFallback": true,
       "warn": true,
       "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
         "Microsoft.NETCore.App": {
           "privateAssets": "all"
         }

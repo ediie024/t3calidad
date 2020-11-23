@@ -136,6 +136,7 @@ namespace SpotifyProCalidad.Controllers
             return View();
         }
         
+        
         private Usser LoggedUser()
         {
             _cookieAuthService.SetHttpContext(HttpContext);

@@ -120,6 +120,58 @@ namespace SpotifyProCalidad.Controllers
             
             return RedirectToAction("Perfil", "PaginaPrincipal");
         }
+        public IActionResult MisAmigos(int IdLista = 0)
+        {
+            var sesion = LoggedUser();
+            ViewBag.Amigos = _usser.MisAmigos(sesion);
+
+            var detalleLista = _listaReproduccion.ListaFavoritos(sesion);
+            ViewBag.Favoritos = detalleLista;
+
+            var MisListas = _listaReproduccion.MisListaRepoducciones(sesion);
+            ViewBag.Mislistas = MisListas;
+            ViewBag.Usser = sesion;
+            ViewBag.AllUsers = _usser.GetAllUsers().ToList();
+
+
+            List<Comentario> detalleComentarios = new List<Comentario>();
+
+            if (IdLista != 0)
+            {
+                detalleComentarios = _comentario.comentariosLista(IdLista);
+
+
+            }
+            ViewBag.ComentariosLista = detalleComentarios;
+            return View();
+        }
+        public IActionResult AgregarAmigos(int IdLista = 0)
+        {
+            var sesion = LoggedUser();
+            ViewBag.Amigos = _usser.MisAmigos(sesion);
+
+            var detalleLista = _listaReproduccion.ListaFavoritos(sesion);
+            ViewBag.Favoritos = detalleLista;
+
+            var MisListas = _listaReproduccion.MisListaRepoducciones(sesion);
+            ViewBag.Mislistas = MisListas;
+            ViewBag.Usser = sesion;
+            ViewBag.AllUsers = _usser.GetAllUsers().ToList();
+
+
+            List<Comentario> detalleComentarios = new List<Comentario>();
+
+            if (IdLista != 0)
+            {
+                detalleComentarios = _comentario.comentariosLista(IdLista);
+
+
+            }
+            ViewBag.ComentariosLista = detalleComentarios;
+
+            ViewBag.AllUsers = _usser.GetAllUsers();
+            return View();
+        }
 
         private Usser LoggedUser()
         {
